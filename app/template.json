@@ -1,0 +1,53 @@
+{
+  "ru": [
+    {
+      "id": #,
+      "cols": #,
+      "colsMin": #,
+      "colsMax": #,
+      "path": "" - english,
+      "header": "",
+      "projects": "",
+      "content": [
+        {
+          "id": #,
+          "path": "" - english,
+          "headerShort": "",
+          "headerLong": "",
+          "customer": "",
+          "descriptionShort": "",
+          "descriptionLong": "" - html,
+          "images": [
+            {
+              "thumb": "/images/content/" - url,
+              "image": "/images/content/" - url,
+              "big": "/images/content/" - url
+            }
+          ],
+          "video": [
+            {
+              "embed": "" - html,
+              "description": "" - html
+            }
+          ],
+          "links": {
+            "header": "",
+            "data": [
+              {
+                "image": "" - url,
+                "description": "",
+                "url": "" - url
+              }
+            ]
+          },
+          "issuu": [
+            {
+              "header": "",
+              "embed": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

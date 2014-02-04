@@ -1,0 +1,93 @@
+$accordion-color: #e5e5e5;
+
+%extend_1 {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix {
+  //*zoom: 1;
+  &:before {
+    @extend %extend_1;
+  }
+  &:after {
+    @extend %extend_1;
+    clear: both;
+  }
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  @include text-shadow(none);
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  @include box-sizing(border-box);
+}
+.accordion {
+  margin-bottom: 20px;
+}
+.accordion-group {
+  margin-bottom: 2px;
+  border: 1px solid $accordion-color;
+  @include border-radius(4px);
+}
+.accordion-heading {
+  border-bottom: 0;
+  .accordion-toggle {
+    display: block;
+    padding: 8px 15px;
+  }
+}
+.accordion-toggle {
+  cursor: pointer;
+}
+.accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid $accordion-color;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+.affix {
+  position: fixed;
+}
+.fade {
+  @include opacity(0);
+  @include transition(opacity 0.15s linear);
+  &.in {
+    @include opacity(1);
+  }
+}
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(height 0.35s ease);
+  &.in {
+    height: auto;
+  }
+}
+@-ms-viewport {
+  width: device-width;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}

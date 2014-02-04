@@ -1,0 +1,41 @@
+<input type="text" placeholder="open source projects by Twitter">
+<% if (activeBox.content && activeBox.content.length > 1) {
+    var split = 8,
+        page = 0,
+        activePage = 0
+        pageCounter = 0;
+        _.each(activeBox.content, function(project, index) {
+            if ((index > 1) && (index % split === 0)) {
+                pageCounter += 1;
+            }
+            if (project === activeProject) {
+                activePage = pageCounter;
+            }
+        }); %>
+    <ul id="Page0" class="projects <%= (activePage === page) ? 'active' : ''%>">
+        <% _.each(activeBox.content, function(project, index) { %>
+            <% if ((index > 1) && (index % split === 0)) {
+                page += 1; %>
+                </ul>
+                <ul id="Page<%= page %>" class="projects <%= (activePage === page) ? 'active' : ''%>">
+            <% } %>
+
+            <li class="<%= (project === activeProject) ? 'active' : ''%>" data-place="<%= project.path%>"><%= project.headerShort %></li>
+        <% }); %>
+    </ul>
+    <% if (activeBox.content.length > split) { %>
+        <div class="pagination">
+            <% for (var index = 0; index <= page; index += 1) { %>
+                <div id="Page<%= index %>" class="projects <%= (activePage === index) ? 'active' : ''%>"></div>
+            <% } %>
+        </div>
+        <br id="Separator">
+    <% } %>
+    <hr>
+<% } %>
+<ul class="sections">
+    <% _.each(gridData, function(section) { %>
+        <li class="<%= (section === activeBox) ? "active" : "" %>" data-section="<%= section.path %>" <%= (section.isSmall && section.content.length > 0) ? ("data-place=" + section.content[0].path) : "" %> ><%= section.header %></li>
+    <% }); %>
+</ul>
+<div id="ArrowUp"></div>

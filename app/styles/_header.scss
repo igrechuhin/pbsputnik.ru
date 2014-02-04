@@ -1,0 +1,83 @@
+/* Scss Document */
+
+@import "base";
+
+#Header {
+
+    //border-bottom: 8px solid $header-border-color;
+
+    height: $container-position-top;
+    width: 100%;
+
+    .logo {
+        position: absolute;
+        cursor: pointer;
+
+        @include flex-sprite($buttons, sputnik);
+
+        @for $i from 1 through $screen-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                top: nth($screen-home-margins, $i) + 2*6px; // 6px - box gap
+                left: nth($screen-home-margins, $i) + 2*6px; // 6px - box gap
+            }
+        }
+    }
+
+    &.home {
+        //border: 0;
+        nav {
+            display: none;
+        }
+    }
+
+    &.project {
+        background-color: $background-color;
+        .logo {
+            @media all and (max-width: nth($screen-widths, 2) - 1px) {
+                display: none;
+            }
+        }
+
+        .languages {
+            display: none;
+        }
+    }
+
+    .languages {
+        position: absolute;
+        cursor: pointer;
+
+        @for $i from 1 through $screen-footer-social-right-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                right: nth($screen-footer-social-right, $i);
+            }
+        }
+
+        @for $i from 1 through $screen-footer-social-left-count {
+            @media all and (min-width: nth($screen-widths, $screen-footer-social-right-count + $i)) {
+                left: nth($screen-footer-social-left, $i);
+            }
+        }
+
+        line-height: 130%;
+        @include navigation-font;
+
+        @include no-bullets;
+        @include horizontal-list(2px);
+        @include user-select(none);
+
+        @for $i from 1 through $screen-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                top: nth($screen-language-top, $i);
+            }
+        }
+
+        .active {
+            color: $box-color-red;
+        }
+
+        .separator {
+            cursor: default;
+        }
+    }
+}

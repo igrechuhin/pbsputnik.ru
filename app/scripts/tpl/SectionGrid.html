@@ -1,0 +1,32 @@
+<% _.each(boxes, function(box) { %>
+    <section id="Box-<%= box.id %>" class="gridbox">
+        <header><%= box.header %></header>
+        <% if (!_.isEmpty(box.content)) {
+            var projectIndex = Math.floor(Math.random() * box.content.length);
+            %>
+            <article>
+                <% if (box.content[projectIndex].headerShort !== "") { %>
+                    <div class="headerShort"><%= box.content[projectIndex].headerShort %></div>
+                <% } %>
+                <% if (!_.isEmpty(box.content[projectIndex].images) && box.content[projectIndex].images[0].image !== "") { %>
+                    <img src="<%= box.content[projectIndex].images[0].image %>">
+                <% } %>
+                <% if (box.isSmall !== true) { %>
+                    <% if (box.content[projectIndex].descriptionShort !== "") { %>
+                        <p class="description"><%= box.content[projectIndex].descriptionShort %></p>
+                    <% } %>
+                    <% if (!_.isUndefined(box.projects)) { %>
+                        <div class="projects">
+                            <div class="projectsheader"><%= box.projects %></div>
+                            <ul class="projectslist">
+                                <% _.each(box.content, function(project) { %>
+                                <li><%= project.headerShort %></li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    <% } %>
+                <% } %>
+            </article>
+        <% } %>
+    </section>
+<% }); %>

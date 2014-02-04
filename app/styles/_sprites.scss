@@ -1,0 +1,25 @@
+@import "compass/utilities/sprites";         // Include compass sprite helpers
+@import "compass/css3/background-size";      // Include helper to calc background size
+
+@mixin flex-sprite($map, $name, $hover: false, $active: false, $pad: 0, $dimensions: true) {
+  background-image: sprite-url($map);
+  background-position: sprite-position($map, $name, -$pad, -$pad);
+  background-repeat: no-repeat;
+
+  @if $dimensions == true {
+    @include sprite-dimensions($map, $name);
+  }
+
+  @if $hover == true {
+    $name_hover: $name + _hover;
+    &:hover {
+      background-position: sprite-position($map, $name_hover, -$pad, -$pad);
+    }
+  }
+  @if $active == true {
+    $name_active: $name + _active;
+    &:active {
+      background-position: sprite-position($map, $name_active, -$pad, -$pad);
+    }
+  }
+}

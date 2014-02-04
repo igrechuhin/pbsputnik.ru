@@ -1,0 +1,25 @@
+<nav></nav>
+<% if (project.headerShort !== "") { %>
+    <header>
+        <h1><%= project.headerShort %></h1>
+    <% if (project.headerLong !== "") { %>
+        <p><%= project.headerLong %></p>
+    <% } %>
+    </header>
+<% } %>
+<% if (project.customer !== "") { %>
+    <div class="customer"><%= project.customer %></div>
+<% } %>
+<% if (project.descriptionLong !== "") { %>
+    <div class="descriptionLong"><%= project.descriptionLong %></div>
+<% } %>
+<% if (!_.isEmpty(project.images)) { %>
+    <% _.each(project.images, function (image, index) { %>
+        <img class="<%= index === 0 ? 'head' : '' %>" src="<%= image.image %>">
+        <% if (((project.images.length - 1) !== index) && (index !== 0)) { %>
+            <hr>
+        <% } else { %>
+            <br>
+        <% } %>
+    <% }); %>
+<% } %>

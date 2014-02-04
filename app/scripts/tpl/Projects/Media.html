@@ -1,0 +1,60 @@
+<nav></nav>
+<% if (project.headerShort !== "") { %>
+    <header>
+        <h1><%= project.headerShort %></h1>
+    <% if (project.headerLong !== "") { %>
+        <p><%= project.headerLong %></p>
+    <% } %>
+    </header>
+<% } %>
+<% if (project.customer !== "") { %>
+    <div class="customer"><%= project.customer %></div>
+<% } %>
+<% if (!_.isEmpty(project.video)) { %>
+    <% _.each(project.video, function (video, index) { %>
+        <div class="video">
+            <%= video.embed %>
+            <% if (video.description !== "") { %>
+                <br>
+                <%= video.description %>
+            <% } %>
+        </div>
+    <% }); %>
+<% } else if (!_.isEmpty(project.images)) { %>
+    <img class="head" src="<%= project.images[0].image %>">
+<% } %>
+<% if (project.descriptionLong !== "") { %>
+    <div class="descriptionLong"><%= project.descriptionLong %></div>
+<% } %>
+<% if (project.links.header !== "") { %>
+    <header class="links"><%= project.links.header %></header>
+    <div class="links">
+        <% _.each(project.links.data, function (link, index) { %>
+            <% if (link.url !== "") { %>
+                <a href="<%= link.url %>">
+                    <% if (link.description !== "") { %>
+                        <p><%= link.description %></p>
+                    <% } %>
+                    <% if (link.description !== "" && link.image !== "") { %>
+                        <br>
+                    <% } %>
+                    <% if (link.image !== "") { %>
+                        <img src="<%= link.image %>">
+                    <% } %>
+                </a>
+            <% } %>
+        <% }); %>
+    </div>
+<% } %>
+<% if (!_.isEmpty(project.images)) { %>
+    <hr>
+    <% _.each(project.images, function (image, index) { %>
+        <% if (_.isEmpty(project.video) && index === 0) { return; } %>
+        <img class="<%= (index === (_.isEmpty(project.video) ? 1 : 0)) ? 'head' : '' %>" src="<%= image.image %>">
+        <% if (((project.images.length - 1) !== index) && (index !== (_.isEmpty(project.video) ? 1 : 0))) { %>
+            <hr>
+        <% } else { %>
+            <br>
+        <% } %>
+    <% }); %>
+<% } %>

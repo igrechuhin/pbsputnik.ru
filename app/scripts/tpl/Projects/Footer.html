@@ -1,0 +1,15 @@
+<% if (footer.contact !== "") { %>
+    <div class="contact" itemscope itemtype="http://schema.org/Organization">
+        <span  itemprop="name" style="display:none;"><%= title %></span>
+        <p>
+            <span itemprop="addressLocality"><%= footer.contact.addressLocality %></span>,&nbsp;<span itemprop="streetAddress"><%= footer.contact.streetAddress %></span><br>
+            <%= footer.contact.telephone %><br>
+            <%= footer.contact.faxNumber %><br>
+            <%= footer.contact.email %>
+        </p>
+    </div>
+<% } %>
+<% if (footer.copyright !== "") { %>
+    <div class="copyright"><%= footer.copyright %>&nbsp;<%= title %></div>
+<% } %>
+<a href="https://www.facebook.com/buro.sputnik" class="social"></a>

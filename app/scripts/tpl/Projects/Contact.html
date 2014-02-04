@@ -1,0 +1,13 @@
+<nav></nav>
+<% if (project.headerLong !== "") { %>
+    <header>
+        <h1><%= project.headerLong %></h1>
+    </header>
+<% } %>
+<% if (!_.isEmpty(project.images) && project.images.length > 1) { %>
+    <img src="<%= project.images[1].image %>">
+<% } %>
+
+<% if (project.descriptionLong !== "") { %>
+    <div class="descriptionLong"><%= project.descriptionLong %></div>
+<% } %>

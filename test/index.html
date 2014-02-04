@@ -1,0 +1,115 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Mocha Spec Runner</title>
+  <link rel="stylesheet" href="lib/mocha/mocha.css">
+</head>
+<body>
+  <section class="container"></section>
+  <div id="mocha"></div>
+
+  <script src="lib/mocha/mocha.js"></script>
+  <script src="lib/chai.js"></script>
+  <script src="lib/sinon-chai.js"></script>
+  <script src="lib/sinon.js"></script>
+  <!-- <script src="lib/chai-as-promised.js"></script> -->
+
+
+  <!-- <script src="lib/blanket.js"></script>
+  <script src="lib/blanketRequire.js"></script>
+  <script src="lib/blanket_browser.js"></script>
+  <script src="lib/mocha-blanket.js"></script>
+  <script src="lib/mocha-helpers.js"></script> -->
+
+  <script src="bower_components/requirejs/require.js"></script>
+
+  <script>
+    mocha.setup({
+      ui: 'bdd',
+      ignoreLeaks: false,
+      globals: ['jQuery110207069654541555792']
+    });
+    expect = chai.expect;
+    should = chai.should();
+
+    require.config({
+      baseUrl: '../scripts',
+      paths: {
+          jquery:         '../bower_components/jquery/jquery',
+          backbone:       '../bower_components/backbone/backbone',
+          underscore:     '../bower_components/underscore/underscore',
+          text:           '../bower_components/requirejs-text/text',
+          bootstrap:      '../bower_components/sass-bootstrap/js',
+
+          galleria:       '../bower_components/jquery-galleria/src/galleria',
+          galleriaTheme:  '../bower_components/jquery-galleria/src/themes/classic/galleria.classic',
+
+          jStorage:       '../bower_components/jStorage/jstorage',
+
+          // blanket: 'lib/blanketRequire',
+
+          spec: '../spec'
+      },
+      map: {
+          '*': {
+              //'models/section': 'models/json/section'
+              'models/section': 'models/memory/section'
+          }
+      },
+
+      shim: {
+          backbone: {
+              deps: ['underscore', 'jquery'],
+              exports: 'Backbone'
+          },
+          underscore: {
+              exports: '_'
+          },
+          jquery: {
+              exports: '$'
+          },
+          bootstrap: {
+              deps: ['jquery'],
+              exports: 'jquery'
+          },
+          galleria: {
+              deps: ['jquery'],
+              exports: 'Galleria'
+          },
+          galleriaTheme: {
+              deps: ['galleria'],
+              exports: 'GalleriaTheme'
+          },
+          jStorage: {
+              exports: '$.jStorage'
+          }
+      }
+    });
+
+    // require('blanket')();
+
+    require([
+        'spec/router.spec',
+        'spec/models.section.spec',
+        'spec/controllers.home.spec',
+        'spec/controllers.home.layout.spec',
+        'spec/utils.boxsupport.spec'
+      ], function () {
+        // new callstack needed for runner
+        setTimeout(function () {
+          require(['../spec-runner']);
+        }, 100);
+    });
+
+  </script>
+
+<!--
+  <script>
+      if (window.PHANTOMJS) {
+          blanket.options("reporter", "lib/grunt-reporter.js");
+      }
+  </script>
+-->
+</body>
+</html>

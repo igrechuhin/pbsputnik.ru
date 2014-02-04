@@ -1,0 +1,64 @@
+@import "base";
+
+#Footer {
+    width: 100%;
+    height: 148px;
+    font-size: 13px;
+    line-height: 16px;
+    @include navigation-font;
+
+    background-color: $background-color;
+
+    margin-top: 42px;
+
+    @for $i from 1 through $screen-footer-social-right-count {
+        @media all and (min-width: nth($screen-widths, $i)) {
+            .social {
+                right: nth($screen-footer-social-right, $i);
+            }
+        }
+    }
+
+    @for $i from 1 through $screen-footer-social-left-count {
+        @media all and (min-width: nth($screen-widths, $screen-footer-social-right-count + $i)) {
+            .social {
+                left: nth($screen-footer-social-left, $i);
+            }
+        }
+    }
+
+    .contact,
+    .copyright {
+        float: left;
+        margin-right: 10%;
+        margin-top: $screen-project-padding-bottom;
+        margin-bottom: $screen-project-padding-bottom;
+
+        a {
+            color: $box-content-color;
+            text-decoration: none;
+        }
+    }
+
+    .contact {
+        @for $i from 1 through $screen-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                padding-left: nth($screen-project-padding-left, $i);
+            }
+        }
+    }
+
+    .copyright {
+        @media all and (max-width: nth($screen-widths, 3) - 1px) {
+            display: none;
+        }
+    }
+
+    .social {
+        position: absolute;
+        margin-top: $screen-project-padding-bottom;
+        margin-bottom: $screen-project-padding-bottom;
+
+        @include flex-sprite($buttons, fb);
+    }
+}

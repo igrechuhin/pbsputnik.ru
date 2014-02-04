@@ -1,0 +1,54 @@
+<nav></nav>
+<% if (project.headerShort !== "") { %>
+    <header>
+        <h1><%= project.headerShort %></h1>
+    <% if (project.headerLong !== "") { %>
+        <p><%= project.headerLong %></p>
+    <% } %>
+    </header>
+<% } %>
+<% if (project.customer !== "") { %>
+    <div class="customer"><%= project.customer %></div>
+<% } %>
+<% if (!_.isEmpty(project.images)) { %>
+    <div class="images"></div>
+<% } %>
+<% if (project.descriptionLong !== "") { %>
+    <div class="descriptionLong"><%= project.descriptionLong %></div>
+<% } %>
+<% if (project.links.header !== "") { %>
+    <header class="links"><%= project.links.header %></header>
+    <div class="links">
+        <% _.each(project.links.data, function (link, index) { %>
+            <% if (link.url !== "") { %>
+                <a href="<%= link.url %>">
+                    <% if (link.description !== "") { %>
+                        <p><%= link.description %></p>
+                    <% } %>
+                    <% if (link.description !== "" && link.image !== "") { %>
+                        <br>
+                    <% } %>
+                    <% if (link.image !== "") { %>
+                        <img src="<%= link.image %>">
+                    <% } %>
+                </a>
+            <% } %>
+        <% }); %>
+    </div>
+<% } %>
+<% if (!_.isEmpty(project.issuu)) { %>
+    <div class="accordion issuu hide" id="issuuAccordion">
+    <% _.each(project.issuu, function (issuu, index) { %>
+        <div class="accordion-group panel">
+            <div class="accordion-heading">
+                <p class="accordion-toggle" data-toggle="collapse" data-parent="#issuuAccordion" data-target="#issuu<%= index %>"><%= issuu.header %></p>
+            </div>
+            <div id="issuu<%= index %>" class="accordion-body collapse <%= (index === 0) ? 'in' : '' %>">
+                <div class="accordion-inner">
+                    <iframe src="issuuviewer.html?bookID=<%= issuu.embed %>" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+    </div>
+<% } %>

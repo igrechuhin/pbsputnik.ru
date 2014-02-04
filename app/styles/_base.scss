@@ -1,0 +1,116 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/lists";
+
+@import "sprites";
+
+$buttons: sprite-map("structure/buttons/*.png", $layout: smart);
+
+$box-color-red: rgb(192,16,57);
+$box-color-purple: rgb(64,92,158);
+$box-color-green: rgb(0,117,124);
+$box-color-orange: rgb(244,109,67);
+
+$box-text-color-red: lighten($box-color-red, 5%);
+$box-text-color-purple: lighten($box-color-purple, 15%);
+$box-text-color-green: lighten($box-color-green, 8%);
+$box-text-color-orange: darken($box-color-orange, 5%);
+
+$box-colors: $box-color-red
+			 $box-color-purple
+			 $box-color-green
+			 $box-color-orange
+			 $box-color-red
+			 $box-color-red
+			 $box-color-purple
+			 $box-color-orange
+			 $box-color-green
+			 $box-color-red;
+
+$box-text-colors: $box-text-color-red
+				  $box-text-color-purple
+				  $box-text-color-green
+			 	  $box-text-color-orange
+			 	  $box-text-color-red
+			 	  $box-text-color-red
+				  $box-text-color-purple
+				  $box-text-color-orange
+				  $box-text-color-green
+				  $box-text-color-red;
+
+$box-count: 10;
+
+$header-border-color: rgb( 51,  51,  51);
+$box-content-color:   rgb( 90,  90,  90);
+$border-color:        rgb(155, 155, 155);
+$grid-color:          rgb(220, 220, 220);
+$background-color:    rgb(240, 240, 240);
+
+$container-position-top: 111px;
+$container-position-left: 15px;
+
+$screen-count: 5;
+$screen-widths:                     0px  480px 768px 1024px 1280px;
+
+$screen-home-margins:               0px    5px  10px   10px   15px;
+$screen-project-margins:            0px    5px  10px   10px   15px;
+
+// $screen-project-width:               95%   95%   90%    80%    70%    70%;
+$screen-project-width:               95%   95%   90%  733px  800px;
+
+$screen-footer-social-right-count: 3;
+$screen-footer-social-right:        8.3%  7%   15.3%;
+// $screen-footer-social-right:        24px  7%   15.3%;
+
+$screen-footer-social-left-count: 2;
+$screen-footer-social-left:                           745px  828px;
+
+$screen-project-padding-bottom:     42px;
+$screen-project-margin-bottom:      16px  24px  24px   29px   30px;
+
+$screen-project-padding-left:        7px  15px  30px   45px   60px;
+
+$screen-project-isuu-height:       200px 320px 500px  620px  620px;
+
+$screen-project-navigation:         100%  100%  100%  820px  966px;
+
+$screen-language-top:                6px   8px  10px   15px   20px;
+
+$header-nav-count: 3;
+$header-nav-ul-margin:               -3% 114px 114px;
+$header-nav-li-margin:             6.47%    8%   12%;
+
+$screen-font-size-count: 3;
+$screen-project-header-font-size:   16px  23px  26px;
+$screen-project-text-font-size:     13px  16px  16px;
+$screen-project-support-font-size:  10px  13px  13px;
+
+$animation-duration: 350ms;
+$animation-easing: ease-in-out;
+
+$fade-duration: 250ms;
+
+@mixin content-font {
+	font-family: 'PT Serif', serif;
+}
+
+@mixin navigation-font {
+	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    -webkit-tap-highlight-color: none;
+
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+
+    //background-color: $background-color;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,202 @@
+/* Scss Document */
+
+@import "base";
+
+#Header {
+    -webkit-tap-highlight-color: none;
+
+    @include user-select(none);
+
+    nav {
+
+        height: $container-position-top;
+
+        max-width: 800px;
+
+        @for $i from 1 through $screen-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                width: nth($screen-project-width, $i);
+            }
+        }
+
+        // @media all and (min-width: nth($screen-widths, 4)) {
+        //     display: none;
+        // }
+
+        ul {
+            @for $i from 1 through $header-nav-count {
+                @media all and (min-width: nth($screen-widths, $i)) {
+                    margin-left: nth($header-nav-ul-margin, $i);
+                }
+            }
+
+            li {
+                cursor: pointer;
+                float: left;
+                margin-top: 24px;
+
+                @for $i from 1 through $header-nav-count {
+                    @media all and (min-width: nth($screen-widths, $i)) {
+                        margin-left: nth($header-nav-li-margin, $i);
+                    }
+                }
+            }
+
+            [data-section="publishing"] {
+                @include flex-sprite($buttons, publishing, true);
+            }
+            [data-section="design"] {
+                @include flex-sprite($buttons, design, true);
+            }
+            [data-section="media"] {
+                @include flex-sprite($buttons, media, true);
+            }
+            [data-section="expo"] {
+                @include flex-sprite($buttons, expo, true);
+            }
+        }
+    }
+}
+
+#Content {
+    nav {
+        // position: fixed;
+        position: absolute;
+        left: 100%;
+        top: $container-position-top + 70px;
+        width: 204px;
+
+        font-size: 13px;
+        @include navigation-font;
+
+        // @include opacity(1);
+
+        @include transition-property(left);
+        @include transition-duration($animation-duration);
+        @include transition-timing-function($animation-easing);
+
+        @for $i from 4 through $screen-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                &.animate {
+                    left: nth($screen-project-navigation, $i);
+                }
+            }
+        }
+
+        ul {
+            padding: 0;
+            //line-height: 140%;
+            @include no-bullets;
+
+            li {
+                cursor: pointer;
+                padding: {
+                    right: 24px;
+                    bottom: 7px;
+                }
+                line-height: 14px;
+            }
+
+            &.projects {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+        .pagination {
+            div {
+                cursor: pointer;
+
+                width: 12px;
+                height: 12px;
+
+                float: left;
+
+                margin: {
+                    top: 12px;
+                    bottom: 19px;
+                    right: 12px;
+                }
+
+                background-color: $grid-color;
+                border-radius: 50%;
+
+                &.active {
+                    background-color: $box-content-color;
+                }
+            }
+        }
+
+        #Separator {
+            line-height: 29px;
+        }
+
+        .twitter-typeahead {
+            width: 90% !important;
+            margin: 14px 0 !important;
+            font-size: 13px;
+            input {
+                width: 100%;
+                font-family: 'PT Sans';
+                font-size: 12px;
+                outline-width: 3px;
+            }
+
+            .tt-dropdown-menu {
+                width: 103%;
+            }
+
+            .tt-suggestions {
+                background-color: white;
+                border: 1px solid $border-color;
+
+                .tt-suggestion {
+                    &:first-child {
+                        margin-top: 5px;
+                    }
+
+                    margin-top: 10px;
+                    padding: 4px 8px 4px 8px;
+
+                    #HeaderName {
+                        letter-spacing: 0.3px;
+                    }
+                    #SectionName {
+                        color: $border-color;
+                    }
+                }
+                .tt-is-under-cursor {
+                    background-color: $background-color;
+                    #HeaderName {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+
+
+        hr {
+            width: 90% !important;
+            margin: 14px 0 !important;
+        }
+
+        @media all and (max-width: nth($screen-widths, 4) - 1px) {
+            display: none;
+        }
+
+        #ArrowUp {
+            @include flex-sprite($buttons, arrow, true);
+
+            display: none;
+
+            position: fixed;
+            bottom: 75px;
+
+            cursor: pointer;
+        }
+    }
+}

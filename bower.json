@@ -1,0 +1,30 @@
+{
+  "name": "pbsputnik.ru",
+  "version": "1.0.0",
+  "dependencies": {
+    "sass-bootstrap": ">=3.0.0",
+    "requirejs": ">=2.1.8",
+    "modernizr": ">=2.6.2",
+    "jquery": ">=2.0.3",
+    "backbone": ">=1.0.0",
+    "underscore": ">=1.5.2",
+    "fitvids": ">=1.0.3",
+    "jquery-galleria": ">=1.2.9",
+    "jstorage": ">=0.4.7",
+    "requirejs-text": ">=2.0.10",
+    "typeahead.js": ">=0.9.3"
+  },
+  "devDependencies": {
+    "sass-bootstrap": ">=3.0.0",
+    "requirejs": ">=2.1.8",
+    "modernizr": ">=2.6.2",
+    "jquery": ">=2.0.3",
+    "backbone": ">=1.0.0",
+    "underscore": ">=1.5.2",
+    "fitvids": ">=1.0.3",
+    "jquery-galleria": ">=1.2.9",
+    "jstorage": ">=0.4.7",
+    "requirejs-text": ">=2.0.10",
+    "typeahead.js": ">=0.9.3"
+  }
+}

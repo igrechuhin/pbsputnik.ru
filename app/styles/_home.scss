@@ -1,0 +1,178 @@
+/* Scss Document */
+
+@import "base";
+
+#Home {
+    z-index: -1;
+    background-size: 0;
+
+    width: 100%;
+    overflow-x: hidden;
+
+    $experimental-support-for-svg: true;
+    @include background(linear-gradient(90deg, $grid-color 1px, transparent 1px, transparent),
+                        linear-gradient(0deg, $grid-color 2px, transparent 2px, transparent));
+
+    background-color: $background-color;
+
+    @for $i from 1 through $screen-count {
+        @media all and (min-width: nth($screen-widths, $i)) {
+            background-position: nth($screen-home-margins, $i) $container-position-top;
+        }
+    }
+
+    #Grid {
+        position: absolute;
+        top: $container-position-top;
+        width: 100%;
+
+        @include content-font;
+
+
+        @for $i from 1 through $screen-count {
+            @media all and (min-width: nth($screen-widths, $i)) {
+                left: nth($screen-home-margins, $i);
+            }
+        }
+
+        .gridbox {
+            @for $i from 1 through $box-count {
+                &#Box-#{$i} {
+                    header {
+                        background-color: nth($box-colors, $i);
+                    }
+
+                    article {
+                        .headerShort {
+                            color: nth($box-text-colors, $i);
+                        }
+                        .projectslist {
+                            color: $box-content-color;
+                            li:hover {
+                                color: nth($box-text-colors, $i);
+                            }
+
+                            // color: nth($box-text-colors, $i);
+                            // li:hover {
+                            //     color: darken(nth($box-text-colors, $i), 20%);
+                            // }
+                        }
+
+                    }
+                }
+            }
+
+            position: absolute;
+            overflow: hidden;
+
+            background-color: white;
+
+            @include transition-property(transform, width, height);
+            @include transition-duration($animation-duration);
+            @include transition-timing-function($animation-easing);
+
+            header {
+                color: white;
+
+                line-height: 100%;
+
+                @include transition-property(font-size);
+                @include transition-duration(0ms);
+                @include transition-timing-function($animation-easing);
+            }
+
+            &.inactivebox {
+                article {
+                    img {
+                        // max-width: 100%;
+                        // padding: 0;
+                        // max-height: 80%;
+                        width: 100%;
+                        padding: 0;
+                    }
+                    .description, .projects {
+                        display: none;
+                    }
+                }
+                &.smallbox {
+                    article {
+                        img {
+                            max-width: 100%;
+                            padding: 0;
+                            max-height: 100%;
+                        }
+                    }
+                }
+                &:not(.smallbox) {
+                    article {
+                        img {
+                            @include filter(grayscale(100%));
+                            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+                            filter: gray; /* IE6-9 */
+                        }
+                    }
+                }
+            }
+
+            article {
+                color: $box-content-color;
+
+                padding: 0;
+                overflow: hidden;
+
+                @include transition-property(height);
+                @include transition-duration($animation-duration);
+                @include transition-timing-function($animation-easing);
+
+                .headerShort, img, .projectslist {
+                    cursor: pointer;
+                }
+
+                .headerShort {
+                    line-height: 140%;
+                    padding: 6px;// 6px 0px 6px;
+                    background-color: transparent !important;
+                }
+                img {
+                    //max-width: 80%;
+                    //max-height: 40%;//200px;
+                    // opacity: 0;
+                    width: 98%;
+                    padding-left: 1%;
+                    padding-right: 1%;
+                }
+                .description {
+                    padding: 6px 12px 6px 6px;
+                    line-height: 140%;
+                }
+
+                .projects {
+                    padding: 12px;
+
+                    .projectsheader {
+                        padding: 12px 0px;
+                        line-height: 140%;
+
+                        @include navigation-font;
+                    }
+                    .projectslist {
+                        margin: 0;
+                        padding: 0 0 12px 12px;
+
+                        font-size: 80%;
+
+                        @include no-bullets;
+                        @include navigation-font;
+
+                        li {
+                            cursor: pointer;
+                            padding-bottom: 10px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

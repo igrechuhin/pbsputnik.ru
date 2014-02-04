@@ -1,0 +1,31 @@
+<nav></nav>
+<% if (project.headerShort !== "") { %>
+    <header>
+        <h1><%= project.headerShort %></h1>
+    <% if (project.headerLong !== "") { %>
+        <p><%= project.headerLong %></p>
+    <% } %>
+    </header>
+<% } %>
+<% if (project.customer !== "") { %>
+    <div class="customer"><%= project.customer %></div>
+<% } %>
+<% if (!_.isEmpty(project.images)) { %>
+    <img class="head" src="<%= project.images[0].image %>">
+    <br>
+<% } %>
+<% if (project.descriptionLong !== "") { %>
+    <div class="descriptionLong"><%= project.descriptionLong %></div>
+<% } %>
+<% if (!_.isEmpty(project.images) && project.images.length > 1) { %>
+    <% _.each(project.images, function (image, index) { %>
+        <% if (index !== 0) { %>
+            <img src="<%= image.image %>">
+            <% if ((project.images.length - 1) !== index) { %>
+                <hr>
+            <% } else { %>
+                <br>
+            <% } %>
+        <% } %>
+    <% }); %>
+<% } %>
