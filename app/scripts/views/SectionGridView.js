@@ -53,6 +53,8 @@ define(function (require) {
                 boxHeader  = this.options.config.box.header,
                 boxContent = this.options.config.box.content,
                 gridConfig = this.options.config.grid,
+                language   = this.options.config.language,
+                newString  = this.options.config.new[language],
 
                 columnsCount   = gridConfig.screens[data.screenIndex].columns,
                 margin         = gridConfig.screens[data.screenIndex].margin,
@@ -66,7 +68,10 @@ define(function (require) {
                 update = (this.$el.children().length !== 0),
 
                 $container = (update) ? this.$el :
-                                $(template({boxes: data.boxes})).filter('section.'.concat(this.options.gridBoxClass)),
+                                $(template({
+                                    boxes: data.boxes,
+                                    newString: newString
+                                })).filter('section.'.concat(this.options.gridBoxClass)),
 
                 bgHeight   = 0,
                 bgGridSize = grid.backgroundGridSize(columnsCount, margin, gap, maxBoxSize);

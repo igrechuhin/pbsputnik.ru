@@ -51,7 +51,9 @@
                             li:hover {
                                 color: nth($box-text-colors, $i);
                             }
-
+                            .new {
+                                color: nth($box-text-colors, $i);
+                            }
                             // color: nth($box-text-colors, $i);
                             // li:hover {
                             //     color: darken(nth($box-text-colors, $i), 20%);

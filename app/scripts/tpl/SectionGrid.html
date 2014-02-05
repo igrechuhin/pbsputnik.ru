@@ -3,10 +3,15 @@
         <header><%= box.header %></header>
         <% if (!_.isEmpty(box.content)) {
             var projectIndex = Math.floor(Math.random() * box.content.length);
-            %>
+            _.each(box.content, function(project, index) {
+                if (project.isNew) {
+                    projectIndex = index;
+                }
+            });
+        %>
             <article>
                 <% if (box.content[projectIndex].headerShort !== "") { %>
-                    <div class="headerShort"><%= box.content[projectIndex].headerShort %></div>
+                    <div class="headerShort"><%= box.content[projectIndex].headerShort %><% if (box.content[projectIndex].isNew) { %><span class="new"> (!!!<%= newString %>!!!)</span><% } %></div>
                 <% } %>
                 <% if (!_.isEmpty(box.content[projectIndex].images) && box.content[projectIndex].images[0].image !== "") { %>
                     <img src="<%= box.content[projectIndex].images[0].image %>">
@@ -20,7 +25,7 @@
                             <div class="projectsheader"><%= box.projects %></div>
                             <ul class="projectslist">
                                 <% _.each(box.content, function(project) { %>
-                                <li><%= project.headerShort %></li>
+                                <li><% if (project.isNew) { %><span class="new"><%= newString %></span><span> - </span><% } %><%= project.headerShort %></li>
                                 <% }); %>
                             </ul>
                         </div>
