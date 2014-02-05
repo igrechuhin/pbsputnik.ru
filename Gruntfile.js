@@ -167,7 +167,6 @@ module.exports = function (grunt) {
             dist: {
                 // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
                 options: {
-                    // `name` and `out` is set by grunt-usemin
                     baseUrl: '<%= yeoman.app %>/scripts',
                     optimize: 'none', //'uglify2', //'none',
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
@@ -177,7 +176,7 @@ module.exports = function (grunt) {
                     // http://requirejs.org/docs/errors.html#sourcemapcomments
                     preserveLicenseComments: false,
                     useStrict: true,
-                    wrap: true
+                    wrap: true,
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
                 }
             },
@@ -227,6 +226,9 @@ module.exports = function (grunt) {
         },
         imagemin: {
             dist: {
+                options: {
+                    cache: false
+                },
                 files: [
                     {
                         expand: true,
@@ -236,15 +238,15 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        cwd: '.tmp/images',
-                        src: 'generated/**/*.{png,jpg,jpeg}',
+                        cwd: '<%= yeoman.app %>/images',
+                        src: 'structure/galleria/**/*.{png,jpg,jpeg}',
                         dest: '<%= yeoman.dist %>/images'
                     },
                     {
                         expand: true,
-                        cwd: '<%= yeoman.app %>/bower_components/jquery-galleria/src/themes/classic',
-                        src: '**/*.{png,jpg,jpeg}',
-                        dest: '<%= yeoman.dist %>/styles'
+                        cwd: '.tmp/images',
+                        src: 'generated/**/*.{png,jpg,jpeg}',
+                        dest: '<%= yeoman.dist %>/images'
                     }
                 ]
             }
@@ -362,11 +364,15 @@ module.exports = function (grunt) {
             test: [
                 'copy:styles'
             ],
-            dist: [
+            dist1: [
+                'compass',
                 'copy:styles',
+                'htmlmin',
+            ],
+            dist2: [
                 'imagemin',
                 'svgmin',
-                'htmlmin'
+                'webp'
             ]
         },
         bower: {
@@ -471,9 +477,8 @@ module.exports = function (grunt) {
         'clean:dist',
         'jshint',
         'useminPrepare',
-        'compass',
-        'concurrent:dist',
-        'webp',
+        'concurrent:dist1',
+        'concurrent:dist2',
         'autoprefixer',
         'requirejs',
         'concat',
@@ -483,8 +488,8 @@ module.exports = function (grunt) {
         'minjson',
         'rev',
         'usemin',
-        'manifest',
-        'modernizr'
+        'manifest'
+        // 'modernizr'
     ]);
 
     grunt.registerTask('default', [

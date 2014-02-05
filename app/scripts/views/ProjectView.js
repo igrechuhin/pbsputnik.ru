@@ -55,7 +55,7 @@ define(function (require) {
     }
 
     function processVideo ($video) {
-        if ($video) {
+        if ($video && $video.fitVids) {
             $video.fitVids();
         }
     }
@@ -70,7 +70,7 @@ define(function (require) {
                 // lightbox: true,
                 //imageCrop: 'landscape',
                 //imageMargin: 35,
-                // debug: false // debug is now off for deployment
+                debug: false // debug is now off for deployment
             });
         }
     }

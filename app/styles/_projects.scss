@@ -262,6 +262,24 @@
 
     @include content-font;
 
+
+    .galleria-container {
+        background: transparent;
+
+        .galleria-counter {
+            color: black;
+        }
+
+        .galleria-thumb-nav-left,
+        .galleria-thumb-nav-right,
+        .galleria-info-link,
+        .galleria-info-close,
+        .galleria-image-nav-left,
+        .galleria-image-nav-right {
+            background-image: url(../images/structure/galleria/classic-map.png);
+        }
+    }
+
     @for $i from 1 through $screen-font-size-count {
         @media all and (min-width: nth($screen-widths, $i)) {
             header {
