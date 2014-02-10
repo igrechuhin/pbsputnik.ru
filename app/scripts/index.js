@@ -17,8 +17,8 @@ require.config({
     },
     map: {
         '*': {
-            //'models/section': 'models/json/section'
-            'models/section': 'models/memory/section'
+            'models/section': 'models/json/section'
+            // 'models/section': 'models/memory/section'
         }
     },
 
