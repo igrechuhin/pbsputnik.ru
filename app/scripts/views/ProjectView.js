@@ -24,7 +24,8 @@ define(function (require) {
             'about':      require('text!tpl/Projects/About.html'),
             'contact':    require('text!tpl/Projects/Contact.html'),
 
-            'izdatelskaya-deyatelnost': require('text!tpl/Projects/Publishing.html')
+            'izdatelskaya-deyatelnost': require('text!tpl/Projects/Publishing.html'),
+            'dizayn':     require('text!tpl/Projects/Design.html')
         },
 
         navigationTemplate = _.template(require('text!tpl/Projects/_Navigation.html')),
