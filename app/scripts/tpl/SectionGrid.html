@@ -11,7 +11,7 @@
         %>
             <article>
                 <% if (box.content[projectIndex].headerShort !== "") { %>
-                    <div class="headerShort"><%= box.content[projectIndex].headerShort %><% if (box.content[projectIndex].isNew) { %><span class="new"> (!!!<%= newString %>!!!)</span><% } %></div>
+                    <div class="headerShort"><%= box.content[projectIndex].headerShort %></div>
                 <% } %>
                 <% if (!_.isEmpty(box.content[projectIndex].images) && box.content[projectIndex].images[0].image !== "") { %>
                     <img src="<%= box.content[projectIndex].images[0].image %>">

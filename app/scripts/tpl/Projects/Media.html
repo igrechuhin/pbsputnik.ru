@@ -26,7 +26,7 @@
 <% if (project.descriptionLong !== "") { %>
     <div class="descriptionLong"><%= project.descriptionLong %></div>
 <% } %>
-<% if (project.links.header !== "") { %>
+<% if (project.links.header !== "" && project.links.header !== null) { %>
     <header class="links"><%= project.links.header %></header>
     <div class="links">
         <% _.each(project.links.data, function (link, index) { %>
