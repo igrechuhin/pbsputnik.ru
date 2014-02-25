@@ -292,12 +292,12 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронную версию книги:",
+            "header": "Читать электронную версию книги:",
             "data": [
               {
                 "image": "",
                 "description": "Омская сенсация",
-                "url": "http://1p.fondpotanin.ru/about/publish/item3.html"
+                "url": "http://issuu.com/potanin/docs/ains.book.72dpi.high.e"
               }
             ]
           },
@@ -344,12 +344,12 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронную версию книги:",
+            "header": "Читать электронную версию книги:",
             "data": [
               {
                 "image": "",
                 "description": "Егорьевские диковины",
-                "url": "http://1p.fondpotanin.ru/about/publish/item2.html"
+                "url": "http://issuu.com/potanin/docs/egorievsk.book_op"
               }
             ]
           },
@@ -488,12 +488,17 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронную версию книги:",
+            "header": "Читать электронную версию книги:",
             "data": [
               {
                 "image": "",
                 "description": "Небеса и&nbsp;окрестности Кенозерья",
-                "url": "http://1p.fondpotanin.ru/about/publish/item1.html"
+                "url": "http://issuu.com/potanin/docs/kenozero_book_chapels"
+              },
+              {
+                "image": "",
+                "description": "Небеса и&nbsp;окрестности Кенозерья",
+                "url": "http://issuu.com/potanin/docs/kenozero_book_articles"
               }
             ]
           },
@@ -600,22 +605,22 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронные версии книг:",
+            "header": "Читать электронные версии книг:",
             "data": [
               {
                 "image": "",
                 "description": "Дейнека. Графика",
-                "url": "http://1p.fondpotanin.ru/about/publish/item4.html"
+                "url": "http://issuu.com/potanin/docs/deineka.1.grafica.opt.111108"
               },
               {
                 "image": "",
                 "description": "Дейнека. Живопись",
-                "url": "http://1p.fondpotanin.ru/about/publish/item6.html"
+                "url": "http://issuu.com/potanin/docs/deyneka.2.zhivopis.opt_test"
               },
               {
                 "image": "",
                 "description": "Дейнека. Монументальное искусство. Скульптура",
-                "url": "http://1p.fondpotanin.ru/about/publish/item11.html"
+                "url": "http://issuu.com/potanin/docs/deineka.3.monument"
               }
             ]
           },
@@ -662,12 +667,12 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронную версию книги:",
+            "header": "Читать электронную версию книги:",
             "data": [
               {
                 "image": "",
                 "description": "Вруцелето, эмблемат, апофегмат…",
-                "url": "http://1p.fondpotanin.ru/about/publish/item8.html"
+                "url": "http://issuu.com/potanin/docs/yaroslavl_book"
               }
             ]
           },
@@ -723,7 +728,7 @@
               {
                 "image": "",
                 "description": "100% Иваново",
-                "url": "http://1p.fondpotanin.ru/about/publish/item7.html"
+                "url": "http://issuu.com/potanin/docs/ivanovo-gorizont"
               }
             ]
           },
@@ -863,82 +868,82 @@
               {
                 "image": "/images/content/publishing/mg2012/download/1.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item20.html"
+                "url": "http://issuu.com/potanin/docs/1g_aramashevskij_kraevedcheskij_muz"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/2.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item18.html"
+                "url": "http://issuu.com/potanin/docs/12g_tulskaya_oblast_yasnaya_polyana"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/3.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item22.html"
+                "url": "http://issuu.com/potanin/docs/3g_sankt-peterburg_detskij_muzejnyj"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/4.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item24.html"
+                "url": "http://issuu.com/potanin/docs/5g_petrozavodsk_muzej_izobrazitelny"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/5.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item16.html"
+                "url": "http://issuu.com/potanin/docs/4g_kolomna_kolomenskaya_pastila"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/6.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item27.html"
+                "url": "http://issuu.com/potanin/docs/7g_moskva_ogni_moskvy"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/7.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item14.html"
+                "url": "http://issuu.com/potanin/docs/9g_kaliningrad.w.cover"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/8.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item25.html"
+                "url": "http://issuu.com/potanin/docs/6g_naxodka_muzejno-vystavochnyj_cen"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/9.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item19.html"
+                "url": "http://issuu.com/potanin/docs/2g_moscow_pokrovskii_sobor"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/10.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item13.html"
+                "url": "http://issuu.com/potanin/docs/8g_vladivostok.w.cover"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/11.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item21.html"
+                "url": "http://issuu.com/potanin/docs/10g_sankt-peterburg_staraya_derevny"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/12.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item17.html"
+                "url": "http://issuu.com/potanin/docs/11g_yaroslavl_yaroslavskie_xramy"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/13.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item12.html"
+                "url": "http://issuu.com/potanin/docs/1k_angarsk.w.cover"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/14.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item15.html"
+                "url": "http://issuu.com/potanin/docs/2k_kemerovo_krasnaya_gorka"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/15.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item26.html"
+                "url": "http://issuu.com/potanin/docs/3k_moskovskaya_oblast_muranovo"
               },
               {
                 "image": "/images/content/publishing/mg2012/download/16.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item23.html"
+                "url": "http://issuu.com/potanin/docs/4k_rybinsk_muzej-zapovednik"
               }
             ]
           },
@@ -1021,12 +1026,12 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронную версию книги:",
+            "header": "Читать электронную версию книги:",
             "data": [
               {
                 "image": "",
                 "description": "Дни в&nbsp;Романовке",
-                "url": "http://1p.fondpotanin.ru/about/publish/item28.html"
+                "url": "http://issuu.com/potanin/docs/dni_v_romanovke_rgb.130710"
               }
             ]
           },
@@ -1082,82 +1087,82 @@
               {
                 "image": "/images/content/publishing/mg2013/download/1.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item30.html"
+                "url": "http://issuu.com/potanin/docs/01k_pavlovskiy.posad"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/2.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item37.html"
+                "url": "http://issuu.com/potanin/docs/01m_menshikovsky.spb.130814"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/3.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item36.html"
+                "url": "http://issuu.com/potanin/docs/02k_nyonoksa.130805"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/4.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item33.html"
+                "url": "http://issuu.com/potanin/docs/02m_akhmatova.spb"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/5.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item42.html"
+                "url": "http://issuu.com/potanin/docs/03k_belgorod.131007"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/6.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item45.html"
+                "url": "http://issuu.com/potanin/docs/03m_kolokolnia.moscow.131217"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/7.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item34.html"
+                "url": "http://issuu.com/potanin/docs/04k_omsk.130710"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/8.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item38.html"
+                "url": "http://issuu.com/potanin/docs/04m_sholokhov.130822"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/9.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item32.html"
+                "url": "http://issuu.com/potanin/docs/05m_divnogorie.130710"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/10.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item39.html"
+                "url": "http://issuu.com/potanin/docs/06m_vyshtenec.130902"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/11.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item35.html"
+                "url": "http://issuu.com/potanin/docs/07m_kenozero.130716"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/12.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item31.html"
+                "url": "http://issuu.com/potanin/docs/08m_perm.130710"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/13.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item40.html"
+                "url": "http://issuu.com/potanin/docs/09m_kursk.130917"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/14.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item44.html"
+                "url": "http://issuu.com/potanin/docs/10m_ulyanovsk.131209"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/15.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item43.html"
+                "url": "http://issuu.com/potanin/docs/11m_azov.131118"
               },
               {
                 "image": "/images/content/publishing/mg2013/download/16.jpg",
                 "description": "",
-                "url": "http://1p.fondpotanin.ru/about/publish/item41.html"
+                "url": "http://issuu.com/potanin/docs/12m_radischev.saratov.130926"
               }
             ]
           },
@@ -1224,12 +1229,12 @@
           ],
           "video": [],
           "links": {
-            "header": "Скачать электронную версию книги:",
+            "header": "Читать электронную версию книги:",
             "data": [
               {
                 "image": "",
                 "description": "Линии Галле",
-                "url": "http://1p.fondpotanin.ru/about/publish/item29.html"
+                "url": "http://issuu.com/potanin/docs/galle_book_2"
               }
             ]
           },
