@@ -1707,6 +1707,58 @@
             ]
           },
           "issuu": []
+        },
+        {
+          "id": 3,
+          "path": "pokrov",
+          "isNew": false,
+          "headerShort": "Приложение для iPad «Покровский собор»",
+          "headerLong": "Приложение для iPad «Покровский собор, филиал Государственного исторического музея».",
+          "customer": "Заказчик: Благотворительный фонд В.&nbsp;Потанина.",
+          "descriptionShort": "Очередное приложение-путеводитель из серии «Музейный гид» посвящено Покровскому собору – одной из самых популярных туристических достопримечательностей России.",
+          "descriptionLong": "<p>Очередное приложение-путеводитель из серии «Музейный гид» посвящено Покровскому собору – одной из самых популярных туристических достопримечательностей России. Кроме традиционной, полезной каждому путешественнику информации о музее, приложение содержит аудиогид, обширную фотогалерею, позволяет рассмотреть внутреннее убранство храма в формате круговой панорамы и режиме гироскопа, а также дает возможность пользователю побывать в тех уголках музея, куда обычно доступ закрыт – верхние обходные галереи и колокольня.  Кроме того, пользователь сможет узнать много необычных, малоизвестных фактов из истории собора.</p>",
+          "images": [
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_1.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_2.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_3.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_4.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_5.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_6.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/media/pokrov/image/Pokr_7.jpg"
+            }
+          ],
+          "video": [],
+          "links": {
+            "header": "Скачать бесплатно можно здесь:",
+            "data": [
+              {
+                "image": "/images/content/media/pokrov/download/qr_apple.jpg",
+                "description": "iPad",
+                "url": "http://goo.gl/rWd6sL"
+              }
+            ]
+          },
+          "issuu": []
         }
       ]
     },
