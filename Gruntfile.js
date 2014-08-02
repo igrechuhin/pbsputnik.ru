@@ -138,7 +138,6 @@ module.exports = function (grunt) {
                 httpFontsPath: '/styles/fonts',
                 relativeAssets: false
             },
-            dist: {},
             server: {
                 options: {
                     debugInfo: true

@@ -7,7 +7,7 @@
     background-size: 0;
 
     width: 100%;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     $experimental-support-for-svg: true;
     @include background(linear-gradient(90deg, $grid-color 1px, transparent 1px, transparent),

@@ -1305,6 +1305,122 @@
             "data": []
           },
           "issuu": []
+        },
+        {
+          "id": 21,
+          "path": "kargopol",
+          "isNew": false,
+          "headerShort": "Каргопольское путешествие",
+          "headerLong": "Каргопольское путешествие. Семь маршрутов по севернорусской земле с Каргопольским историко-архитектурным и художественным музеем. М.: Программа «Первая публикация» Некоммерческой благотворительной организации «Благотворительный фонд В. Потанина, 2014 г. – 836 с.: 773 ил.",
+          "customer": "Заказчик: Благотворительный фонд В. Потанина.",
+          "descriptionShort": "Книга посвящена коллекции Каргопольского историко-архитектурного и художественного музея (КИАХМ), истории и культуре Каргопольского района Архангельской области.",
+          "descriptionLong": "<p>Книга посвящена коллекции Каргопольского историко-архитектурного и художественного музея (КИАХМ), истории и культуре Каргопольского района Архангельской области. В книге представлены сделанные специалистами российских музеев и научных институтов описания экспонатов коллекции КИАХМ, очерки об истории и традициях этого региона, рассказы местных жителей о старинных обычаях и обрядах. Дополняют описание редкие фотографии из собрания КИАХМ конца XIX – XX века и работы современных фотохудожников. Книга представляет целостную и разнообразную картину жизни Каргополья – уникального региона Русского Севера. Большинство экспонатов КИАХМ публикуется впервые. Книга предназначена как для широкого круга читателей, так и для специалистов – искусствоведов, историков, фольклористов.</p>",
+          "images": [
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/01.jpg",
+              "image": "/images/content/publishing/kargopol/image/01.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/02.jpg",
+              "image": "/images/content/publishing/kargopol/image/02.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/03.jpg",
+              "image": "/images/content/publishing/kargopol/image/03.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/04.jpg",
+              "image": "/images/content/publishing/kargopol/image/04.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/05.jpg",
+              "image": "/images/content/publishing/kargopol/image/05.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/06.jpg",
+              "image": "/images/content/publishing/kargopol/image/06.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/07.jpg",
+              "image": "/images/content/publishing/kargopol/image/07.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/08.jpg",
+              "image": "/images/content/publishing/kargopol/image/08.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/09.jpg",
+              "image": "/images/content/publishing/kargopol/image/09.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/10.jpg",
+              "image": "/images/content/publishing/kargopol/image/10.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/11.jpg",
+              "image": "/images/content/publishing/kargopol/image/11.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/12.jpg",
+              "image": "/images/content/publishing/kargopol/image/12.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/kargopol/thumb/13.jpg",
+              "image": "/images/content/publishing/kargopol/image/13.jpg"
+            }
+          ],
+          "video": [],
+          "links": {
+            "header": "",
+            "data": []
+          },
+          "issuu": []
+        },
+        {
+          "id": 22,
+          "path": "new_ierusalim",
+          "isNew": false,
+          "headerShort": "Фотоотчёт о реставрации монументальной живописи в Воскресенском соборе Ново-Иерусалимского монастыря",
+          "headerLong": "Фотоотчёт о реставрации монументальной живописи в Воскресенском соборе Ново-Иерусалимского монастыря.",
+          "customer": "Заказчик: ЗАО «БалтСтрой».",
+          "descriptionShort": "Создание презентационного подарочного фотоальбома, демонстРирующего отреставрированную монументальную живопись Воскресенского собора Ново-Иерусалимского монастыря.",
+          "descriptionLong": "<p>В процессе комплексной реставрации Ново-Иерусалимского монастыря в Воскресенском соборе была восстановлена настенная живопись XVIII-XIX веков.</p><p>Проектное бюро «Спутник» в кратчайшие сроки организовало сложную архитектурную фотосъёмку и подготовило  издание, которое было вручено как пасхальный подарок патриарху Кириллу.</p>",
+          "images": [
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/01.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/01.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/02.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/02.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/03.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/03.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/04.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/04.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/05.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/05.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/06.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/06.jpg"
+            },
+            {
+              "thumb": "/images/content/publishing/new_ierusalim/thumb/07.jpg",
+              "image": "/images/content/publishing/new_ierusalim/image/07.jpg"
+            }
+          ],
+          "video": [],
+          "links": {
+            "header": "",
+            "data": []
+          },
+          "issuu": []
         }
       ]
     },
@@ -1584,6 +1700,144 @@
             {
               "thumb": "",
               "image": "/images/content/design/dialog/image/2.jpg"
+            }
+          ],
+          "video": [],
+          "links": {
+            "header": "",
+            "data": []
+          },
+          "issuu": []
+        },
+        {
+          "id": 7,
+          "path": "tsaritsino",
+          "isNew": false,
+          "headerShort": "Музей-заповедник «Царицыно»",
+          "headerLong": "",
+          "customer": "Заказчик: ГБУК г. Москвы «ГМЗ «Царицыно».",
+          "descriptionShort": "Разработка фирменного стиля, дизайна сувенирной и полиграфической продукции, элементов веб-дизайна для Музея-заповедника «Царицыно».",
+          "descriptionLong": "<p>Государственный историко-архитектурный, художественный и ландшафтный музей-заповедник «Царицыно» — одно из самых больших музейно-выставочных учреждений города Москвы и крупнейший музей-заповедник в городе.</p><p>Команда Проектного бюро «Спутник» разработала фирменный стиль, дизайн сувенирной и полиграфической продукции,  а также приняла участие в разработке элементов дизайна для веб-сайта музея.</p>",
+          "images": [
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_01.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_02.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_03.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_04.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_06.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_07.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_08.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_09.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_10.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_11.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_12.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_13.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_14.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_15.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/tsaritsino/image/ts_16.jpg"
+            }
+          ],
+          "video": [],
+          "links": {
+            "header": "",
+            "data": []
+          },
+          "issuu": []
+        },
+        {
+          "id": 8,
+          "path": "mzmr",
+          "isNew": false,
+          "headerShort": "Московский центр музейного развития",
+          "headerLong": "",
+          "customer": "Заказчик: ГБУК г. Москвы «Московский центр музейного развития».",
+          "descriptionShort": "Разработка фирменного стиля для Московского центра музейного развития.",
+          "descriptionLong": "<p>Московский центр музейного развития был создан в январе 2014 года. Основные направления деятельности МЦМР: межмузейные проекты, образование в музее, программы профессионального развития, проектно-аналитическое и консультационное, информационное и организационное сопровождение.</p><p>Команда Проектного бюро «Спутник» разработала фирменный стиль Центра.</p>",
+          "images": [
+            {
+              "thumb": "",
+              "image": "/images/content/design/mzmr/image/1.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/mzmr/image/2.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/mzmr/image/3.jpg"
+            }
+          ],
+          "video": [],
+          "links": {
+            "header": "",
+            "data": []
+          },
+          "issuu": []
+        },
+        {
+          "id": 9,
+          "path": "vz",
+          "isNew": false,
+          "headerShort": "Объединение «Выставочные залы Москвы»",
+          "headerLong": "",
+          "customer": "Заказчик: Объединение «Выставочные залы Москвы».",
+          "descriptionShort": "Разработка фирменного стиля, дизайн и изготовление полиграфической продукции для Объединения «Выставочные залы Москвы».",
+          "descriptionLong": "<p>Объединение «Выставочные залы Москвы» - новый проект Департамента культуры г. Москвы, посвященный децентрализации культуры и модернизации деятельности культурных организаций. В состав Объединения входит 19 выставочных залов, расположенных в 10 округах Москвы.</p><p>Команда Проектного бюро «Спутник» участвовала в создании фирменного стиля Объединения, а также разработала дизайн полиграфической продукции и обеспечила её изготовление.</p>",
+          "images": [
+            {
+              "thumb": "",
+              "image": "/images/content/design/vz/image/01.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/vz/image/02.jpg"
+            },
+            {
+              "thumb": "",
+              "image": "/images/content/design/vz/image/03.jpg"
             }
           ],
           "video": [],
